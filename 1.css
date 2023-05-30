@@ -1,0 +1,102 @@
+:root {
+  --bleeding: 0.5cm;
+  --margin: 1cm;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.page {
+  display: inline-block;
+  position: relative;
+  height: 297mm;
+  width: 210mm;
+  font-size: 12pt;
+  margin: 2em auto;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+@media screen {
+  .page::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+@media print {
+  .page {
+    margin: 0;
+    overflow: hidden;
+  }
+}
+.profile-image{
+  margin-top: 40px;
+}
+.profile-content{
+  margin: 10px;
+}
+.profile-section{
+  background-color: #323b4c;
+  width: 70mm;  
+  height: 297mm;
+ 
+}
+.resume{
+  display: inline-flex;
+}
+.details{
+  width: 140mm;
+  margin: 15px;
+  margin-top: 40px;
+  
+}
+.details-logo{
+  display: inline-flex;
+  gap: 4rem;
+  margin-top: 20px;
+}
+.details-logo-content{
+  width: 50%;
+}
+.project{
+  margin-top: 30px;
+}
+.details-project{
+  margin-top: 10px;
+}
+.profile-skills{
+  display: inline-flex;
+}
+.profile-skills-details{
+  width: 50%;
+}
+.education{
+  margin-top: 15px;
+}
+.details-education{
+  margin-top: 10px;
+}
+.certify{
+  margin-top: 15px;
+}
+.details-certify{
+  margin-top: 10px;
+}
