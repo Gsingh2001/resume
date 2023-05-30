@@ -3,6 +3,8 @@
   --margin: 1cm;
 }
 
+
+/* A4 size */
 @page {
   size: A4;
   margin: 0;
@@ -19,10 +21,7 @@ body {
   flex-direction: column;
   
 }
-.page a{
-text-decoration: none;
-color: black;
-}
+
 
 .page {
   display: inline-block;
@@ -33,6 +32,10 @@ color: black;
   margin: 2em auto;
   box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
 }
+.page a{
+  text-decoration: none;
+  color: black;
+  }
 
 @media screen {
   .page::after {
@@ -51,6 +54,13 @@ color: black;
     overflow: hidden;
   }
 }
+
+/* resume */
+.resume{
+  display: inline-flex;
+}
+
+/* profile section */
 .profile-image{
   margin-top: 40px;
 }
@@ -61,11 +71,18 @@ color: black;
   background-color: #323b4c;
   width: 70mm;  
   height: 297mm;
- 
+  color: #fff;
 }
-.resume{
+
+/* profile-skills */
+.profile-skills{
   display: inline-flex;
 }
+.profile-skills-details{
+  width: 50%;
+}
+
+/* details  */
 .details{
   width: 140mm;
   margin: 15px;
@@ -80,24 +97,24 @@ color: black;
 .details-logo-content{
   width: 50%;
 }
+
+/* Project  */
 .project{
   margin-top: 30px;
 }
 .details-project{
   margin-top: 10px;
 }
-.profile-skills{
-  display: inline-flex;
-}
-.profile-skills-details{
-  width: 50%;
-}
+
+/* Education */
 .education{
   margin-top: 15px;
 }
 .details-education{
   margin-top: 10px;
 }
+
+/* Certification */
 .certify{
   margin-top: 15px;
 }
