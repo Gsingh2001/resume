@@ -63,13 +63,17 @@ body {
 /* profile section */
 .profile-image{
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 .profile-content{
   margin: 10px;
 }
 .profile-section{
   background-color: #323b4c;
-  width: 70mm;  
+  width: 33.3%;  
   height: 297mm;
   color: #fff;
 }
